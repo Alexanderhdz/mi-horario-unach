@@ -1,1 +1,33 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b6b4f"><title>Mi Horario UNACH</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css"></head><body><header><h1>Mi Horario</h1><p>5° B · Agosto–Diciembre 2026</p></header><main><div class="info"><b>Ingeniería en Desarrollo y Tecnologías de Software</b><small>Facultad de Negocios · Campus IV</small></div><nav id="days"></nav><h2 id="title"></h2><div id="schedule"></div></main><div id="modal" hidden><article><button id="x">×</button><h2 id="sub"></h2><p><b>Horario:</b> <span id="time"></span></p><p><b>Profesor:</b> <span id="teacher"></span></p><p><b>Grupo:</b> 5° B</p></article></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b6b4f">
+  <meta name="description" content="Horario de clases UNACH 5° B">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+  <title>Mi Horario UNACH</title>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <p class="eyebrow">UNACH · 5° B</p>
+        <h1>Mi Horario</h1>
+        <p class="sub">Ingeniería en Desarrollo y Tecnologías de Software</p>
+      </div>
+      <button id="installBtn" class="install hidden">Instalar</button>
+    </header>
+    <nav id="days" class="days" aria-label="Días"></nav>
+    <section id="schedule" class="schedule"></section>
+  </main>
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close" aria-label="Cerrar">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
